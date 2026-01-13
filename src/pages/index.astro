@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Home">
+  <!-- Hero Section -->
+  <section class="py-24 md:py-32 px-6 md:px-12 lg:px-24">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading text-cream mb-6">
+        Investigative journalism.<br />
+        Transformation work.<br />
+        <span class="text-gold">Fearless truth-telling.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-muted max-w-2xl mx-auto mb-12 leading-relaxed">
+        A home for research, original frameworks, and work that looks beneath the surface — and says what others won't.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <Button href="/work">Explore My Work</Button>
+        <Button href="/contact" variant="secondary">Get In Touch</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Do Section -->
+  <section class="py-24 px-6 md:px-12 lg:px-24 bg-charcoal">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-heading text-center mb-16">
+        What I Do
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Investigative Journalism -->
+        <div class="p-8 border border-charcoal hover:border-gold/30 transition-all duration-300 bg-black">
+          <h3 class="text-2xl font-heading text-gold mb-4">Investigative Journalism</h3>
+          <p class="text-muted mb-4 leading-relaxed">
+            Long-form investigations examining safeguarding failures, power structures, institutional blind spots, and systemic inaction. Survivor-led. Evidence-based.
+          </p>
+          <a href="/work" class="text-gold hover:text-cream transition-colors text-sm uppercase tracking-wide">
+            View Projects &rarr;
+          </a>
+        </div>
+
+        <!-- Shadowborn -->
+        <div class="p-8 border border-charcoal hover:border-gold/30 transition-all duration-300 bg-black">
+          <h3 class="text-2xl font-heading text-gold mb-4">Shadowborn</h3>
+          <p class="text-muted mb-4 leading-relaxed">
+            Shadow work and ritual-based transformation. A 12-week journey, 1:1 sessions, ancestral readings, and tools for those ready to descend.
+          </p>
+          <a href="https://www.shadowborn.co.uk" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-cream transition-colors text-sm uppercase tracking-wide">
+            Visit Shadowborn &rarr;
+          </a>
+        </div>
+
+        <!-- Human Chart Cycle -->
+        <div class="p-8 border border-charcoal hover:border-gold/30 transition-all duration-300 bg-black">
+          <h3 class="text-2xl font-heading text-gold mb-4">Human Chart Cycle</h3>
+          <p class="text-muted mb-4 leading-relaxed">
+            A masterclass teaching you to read timing, pressure build-ups, and collective cycles using nervous system intelligence. 90-minute live class + 30-day programme.
+          </p>
+          <a href="/contact" class="text-gold hover:text-cream transition-colors text-sm uppercase tracking-wide">
+            Learn More &rarr;
+          </a>
+        </div>
+
+        <!-- Media & Speaking -->
+        <div class="p-8 border border-charcoal hover:border-gold/30 transition-all duration-300 bg-black">
+          <h3 class="text-2xl font-heading text-gold mb-4">Media & Speaking</h3>
+          <p class="text-muted mb-4 leading-relaxed">
+            Available for interviews, panels, podcasts, and expert commentary on online safety, grooming, safeguarding, behavioural patterns, and power structures.
+          </p>
+          <a href="/media" class="text-gold hover:text-cream transition-colors text-sm uppercase tracking-wide">
+            Media Enquiries &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brief About Section -->
+  <section class="py-24 px-6 md:px-12 lg:px-24">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xl md:text-2xl font-heading text-cream leading-relaxed mb-8">
+        "I don't sensationalise harm. I document it."
+      </p>
+      <p class="text-muted leading-relaxed mb-8">
+        Sophie Lewis is an NUJ-accredited journalist, researcher, and systems thinker. Her work combines lived experience, academic training, investigative methods, and pattern recognition to expose structural failure and question power.
+      </p>
+      <a href="/about" class="text-gold hover:text-cream transition-colors text-sm uppercase tracking-wide">
+        Read More &rarr;
+      </a>
+    </div>
+  </section>
+</BaseLayout>

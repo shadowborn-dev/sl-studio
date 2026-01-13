@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<BaseLayout title="Work" description="Investigative journalism, transformation programmes, and original frameworks by Sophie Lewis.">
+  <!-- Hero -->
+  <section class="py-24 md:py-32 px-6 md:px-12 lg:px-24">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-heading text-cream mb-8">
+        Work
+      </h1>
+      <p class="text-xl text-muted leading-relaxed">
+        Investigative journalism, transformation programmes, and original frameworks. Each project has its own home — here's where to find them.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="pb-24 px-6 md:px-12 lg:px-24">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8">
+        <ProjectCard
+          title="The Grooming Files"
+          description="Survivor-led investigative journalism documenting grooming, exploitation, and systemic inaction. Long-form investigations examining safeguarding failures and institutional blind spots."
+          href="https://www.thegroomingfiles.com"
+          linkText="Visit Site"
+        />
+
+        <ProjectCard
+          title="Life Unscripted UK"
+          description="Independent journalism on government accountability, criminal justice, human rights, and social justice. No corporate backers. No political strings. Reader-supported truth-telling."
+          href="https://lifeunscripteduk.wordpress.com"
+          linkText="Visit Site"
+        />
+
+        <ProjectCard
+          title="Shadowborn"
+          description="Shadow work and ritual-based transformation. A 12-week journey, 1:1 sessions, ancestral readings, and ritual tools for those ready to descend. You're not broken. You're burning off what was never yours."
+          href="https://www.shadowborn.co.uk"
+          linkText="Visit Site"
+        />
+
+        <ProjectCard
+          title="Human Chart Cycle"
+          description="A masterclass teaching you to read timing, pressure build-ups, and collective cycles using nervous system intelligence. 90-minute live class plus a 30-day guided practice programme."
+          href="/contact"
+          linkText="Enquire"
+          external={false}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section class="py-24 px-6 md:px-12 lg:px-24 bg-charcoal">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xl font-heading text-cream leading-relaxed mb-8">
+        The common thread: depth over surface, pattern recognition, truth-facing — internal and external — and giving voice to what's hidden.
+      </p>
+      <a href="/media" class="text-gold hover:text-cream transition-colors text-sm uppercase tracking-wide">
+        Media & Collaboration &rarr;
+      </a>
+    </div>
+  </section>
+</BaseLayout>

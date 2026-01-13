@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="About" description="Sophie Lewis - NUJ-accredited journalist, researcher, and systems thinker specialising in online harm, grooming, and institutional accountability.">
+  <!-- Hero -->
+  <section class="py-24 md:py-32 px-6 md:px-12 lg:px-24">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+          <img
+            src="/sophie.jpg"
+            alt="Sophie Lewis"
+            class="w-full h-full object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
+          />
+        </div>
+        <div>
+          <h1 class="text-4xl md:text-5xl font-heading text-cream mb-6 text-center md:text-left">
+            About
+          </h1>
+          <p class="text-xl text-muted leading-relaxed text-center md:text-left">
+            I'm Sophie Lewis — an NUJ-accredited journalist, researcher, and systems thinker.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="pb-24 px-6 md:px-12 lg:px-24">
+    <div class="max-w-3xl mx-auto">
+      <!-- Focus Areas -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-heading text-gold mb-6">My Work Focuses On</h2>
+        <ul class="space-y-3 text-muted">
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>Online harm and digital exploitation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>Grooming and safeguarding failures</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>Behavioural patterns and power structures</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>Systemic accountability and institutional blind spots</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>Collective cycles and pattern recognition</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Approach -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-heading text-gold mb-6">My Approach</h2>
+        <p class="text-muted leading-relaxed mb-6">
+          I combine lived experience, academic training, investigative methods, and pattern recognition. My background includes studying for a BA (Hons) in Social Sciences with specialisation in criminology and forensic psychology.
+        </p>
+        <p class="text-muted leading-relaxed">
+          I built Sophie Lewis Studio to house everything I do in one place — journalism, frameworks, research, and transformation work — without fragmenting across platforms.
+        </p>
+      </div>
+
+      <!-- Purpose -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-heading text-gold mb-6">This Studio Exists To</h2>
+        <ul class="space-y-3 text-muted">
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>Expose structural failure</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>Question power</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>Track patterns others miss</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>Publish work without institutional filters</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Statement -->
+      <div class="border-l-2 border-gold pl-8 py-4 mb-16">
+        <p class="text-xl font-heading text-cream leading-relaxed mb-4">
+          "I don't sensationalise harm. I document it."
+        </p>
+        <p class="text-muted">
+          My work is survivor-led, evidence-based, and ethically grounded.
+        </p>
+      </div>
+
+      <!-- Credentials -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-heading text-gold mb-6">Credentials</h2>
+        <ul class="space-y-3 text-muted">
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>NUJ (National Union of Journalists) accredited member</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold mt-1">—</span>
+            <span>BA (Hons) Social Sciences — Criminology & Forensic Psychology</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Published In -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-heading text-gold mb-6">Published In</h2>
+        <div class="grid gap-4">
+          <a
+            href="https://nation.cymru/opinion/a-letter-from-the-ashes-of-shamed-britain/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group p-6 bg-charcoal hover:border-gold/30 border border-charcoal transition-all"
+          >
+            <p class="text-sm text-gold uppercase tracking-wide mb-2">Nation.Cymru</p>
+            <p class="text-cream group-hover:text-gold transition-colors">A Letter From the Ashes of Shamed Britain</p>
+          </a>
+          <a
+            href="https://www.thecanary.co/uk/analysis/2025/03/30/grooming-files-predators/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group p-6 bg-charcoal hover:border-gold/30 border border-charcoal transition-all"
+          >
+            <p class="text-sm text-gold uppercase tracking-wide mb-2">The Canary</p>
+            <p class="text-cream group-hover:text-gold transition-colors">Grooming Files: Predators</p>
+          </a>
+          <a
+            href="https://pembrokeshire-herald.com/109916/we-werent-wild-we-were-unprotected-a-generation-groomed-and-forgotten-by-the-system/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group p-6 bg-charcoal hover:border-gold/30 border border-charcoal transition-all"
+          >
+            <p class="text-sm text-gold uppercase tracking-wide mb-2">Pembrokeshire Herald</p>
+            <p class="text-cream group-hover:text-gold transition-colors">We Weren't Wild, We Were Unprotected</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-4">
+        <Button href="/work">View My Work</Button>
+        <Button href="/contact" variant="secondary">Get In Touch</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
