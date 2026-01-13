@@ -1,16 +1,18 @@
 {
-  "name": "growing-giant",
+  "name": "sl-studio",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "start": "serve dist -l $PORT",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.9",
+    "serve": "^14.2.5",
     "tailwindcss": "^4.1.18"
   }
 }
