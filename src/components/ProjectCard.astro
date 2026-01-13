@@ -5,12 +5,18 @@ interface Props {
   href: string;
   linkText?: string;
   external?: boolean;
+  logo?: string;
 }
 
-const { title, description, href, linkText = "Visit Site", external = true } = Astro.props;
+const { title, description, href, linkText = "Visit Site", external = true, logo } = Astro.props;
 ---
 
 <div class="group p-8 bg-charcoal rounded-sm border border-charcoal hover:border-gold/30 transition-all duration-300">
+  {logo && (
+    <div class="mb-6 h-16 flex items-center">
+      <img src={logo} alt={`${title} logo`} class="h-full w-auto max-w-[180px] object-contain opacity-80 group-hover:opacity-100 transition-opacity" />
+    </div>
+  )}
   <h3 class="text-2xl text-cream font-heading mb-4 group-hover:text-gold transition-colors">
     {title}
   </h3>
