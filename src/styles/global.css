@@ -8,8 +8,8 @@
   --color-muted: #888888;
   --color-dark-muted: #666666;
 
-  --font-heading: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-heading: "Libre Baskerville", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
 }
 
 @layer base {
